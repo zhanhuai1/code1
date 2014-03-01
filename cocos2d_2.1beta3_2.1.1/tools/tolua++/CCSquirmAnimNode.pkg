@@ -1,0 +1,14 @@
+class CCSquirmAnimNode : public CCNode
+{
+	static CCSquirmAnimNode* create(CCTexture2D* color_texture, CCTexture2D* mask_texture);
+
+	void setOpacity(unsigned int opacity);
+	
+	void setColor(const ccColor3B& color);
+
+	void setTextureScale(float f);
+
+	void setMaskScale(float f);
+
+	void setAnimSpeed(float f);
+};

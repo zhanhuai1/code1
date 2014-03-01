@@ -1,0 +1,17 @@
+
+	class PathFinder : public cocos2d::CCObject
+	{
+		PathFinder(unsigned int w, unsigned int h);
+
+		void Reset();
+
+		void SetBlock(unsigned int x, unsigned int y, bool block);
+
+		// Set the origin point and the destination point
+		void AddDetination(unsigned int dst_x, unsigned int dst_y);
+
+		// Get the path to nearest destination
+		// if there is no path to any dest, return false
+		bool GetPath(unsigned int src_x, unsigned int src_y, std::vector<unsigned int>& path);
+	};
+	

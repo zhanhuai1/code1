@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{83371666-be62-4e91-b8cc-395730853621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{917fb40f-fc6d-4ee9-9a20-26debabe41aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_support">
+      <UniqueIdentifier>{edfecfd4-b393-4346-bf82-fac6cfd394df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\CCLuaEngine.cpp">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\Cocos2dxLuaLoader.cpp">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\LuaCocos2d.cpp">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\tolua_fix.c">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\LuaUI.cpp">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cocos2dx_support\bit.cpp">
+      <Filter>lua_support</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\CCLuaEngine.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\Cocos2dxLuaLoader.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\LuaCocos2d.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\tolua_fix.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\LuaUI.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cocos2dx_support\bit.h">
+      <Filter>lua_support</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

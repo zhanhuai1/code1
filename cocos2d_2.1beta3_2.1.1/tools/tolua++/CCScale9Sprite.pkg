@@ -1,0 +1,25 @@
+class CCScale9Sprite : public CCNode
+{    
+
+    static CCScale9Sprite* create(const char* file, CCRect rect,  CCRect capInsets);
+
+    static CCScale9Sprite* create(const char* file, CCRect rect);
+
+    static CCScale9Sprite* create(CCRect capInsets, const char* file);
+
+    static CCScale9Sprite* create(const char* file);
+    
+    static CCScale9Sprite* createWithSpriteFrame(CCSpriteFrame* spriteFrame, CCRect capInsets); 
+    
+    static CCScale9Sprite* createWithSpriteFrame(CCSpriteFrame* spriteFrame);  
+
+    static CCScale9Sprite* createWithSpriteFrameName(const char*spriteFrameName, CCRect capInsets); 
+
+    static CCScale9Sprite* createWithSpriteFrameName(const char*spriteFrameName);
+    
+    static CCScale9Sprite* create();
+
+    void setContentSize(const CCSize & size);
+    
+    void setSpriteFrame(CCSpriteFrame * spriteFrame);
+};

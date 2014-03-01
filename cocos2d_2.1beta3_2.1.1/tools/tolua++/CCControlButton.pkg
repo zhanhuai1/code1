@@ -1,0 +1,17 @@
+class CCControlButton : public CCControl
+{        
+    void setEnabled(bool enabled);
+    void setSelected(bool enabled);
+    void setHighlighted(bool enabled);    
+    bool isPushed();
+    
+    void setAdjustBackgroundImage(bool adjustBackgroundImage);
+    
+    static CCControlButton* create(CCNode* label, CCScale9Sprite* backgroundSprite);
+    
+    static CCControlButton* create(std::string title, const char * fontName, float fontSize);
+    
+    static CCControlButton* create(CCScale9Sprite* sprite);
+    
+    static CCControlButton* create();
+};

@@ -1,0 +1,50 @@
+class CCControl : public CCLayer
+{
+    virtual void setEnabled(bool bEnabled);
+    virtual bool isEnabled();
+    virtual void setSelected(bool bSelected);
+    virtual bool isSelected();
+    virtual void setHighlighted(bool bHighlighted);
+    virtual bool isHighlighted();
+};
+
+class CCScale9Sprite : public CCNode
+{    
+
+    static CCScale9Sprite* create(const char* file, CCRect rect,  CCRect capInsets);
+
+    static CCScale9Sprite* create(const char* file, CCRect rect);
+
+    static CCScale9Sprite* create(CCRect capInsets, const char* file);
+
+    static CCScale9Sprite* create(const char* file);
+    
+    static CCScale9Sprite* createWithSpriteFrame(CCSpriteFrame* spriteFrame, CCRect capInsets); 
+    
+    static CCScale9Sprite* createWithSpriteFrame(CCSpriteFrame* spriteFrame);  
+
+    static CCScale9Sprite* createWithSpriteFrameName(const char*spriteFrameName, CCRect capInsets); 
+
+    static CCScale9Sprite* createWithSpriteFrameName(const char*spriteFrameName);
+    
+    static CCScale9Sprite* create();
+
+    void setContentSize(const CCSize & size);
+    
+    void setSpriteFrame(CCSpriteFrame * spriteFrame);
+};
+class CCControlButton : public CCControl
+{        
+    void setEnabled(bool enabled);
+    void setSelected(bool enabled);
+    void setHighlighted(bool enabled);    
+    bool isPushed();
+    
+    static CCControlButton* create(CCNode* label, CCScale9Sprite* backgroundSprite);
+    
+    static CCControlButton* create(std::string title, const char * fontName, float fontSize);
+    
+    static CCControlButton* create(CCScale9Sprite* sprite);
+    
+    static CCControlButton* create();
+};
